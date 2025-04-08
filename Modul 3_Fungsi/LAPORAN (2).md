@@ -69,7 +69,7 @@ func main() {
 	}
 }
 ```
-![[Screenshot 2025-03-20 105501.png]]
+![Output(output/Screenshot 2025-03-20 105501.png)]
 
 Program ini menghitung faktorial, permutasi, dan kombinasi berdasarkan input pengguna. Faktorial digunakan sebagai dasar perhitungan, di mana permutasi menghitung jumlah cara menyusun elemen dengan memperhatikan urutan, sedangkan kombinasi menghitung jumlah cara memilih elemen tanpa memperhatikan urutan. Program menerima empat angka sebagai input, lalu memproses apakah nilai yang dimasukkan memenuhi syarat sebelum melakukan perhitungan
 ##### Fungsi Permutasi
