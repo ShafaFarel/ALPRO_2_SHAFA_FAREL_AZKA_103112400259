@@ -62,7 +62,7 @@ func main() {
 	fmt.Println(angkaTerurut)
 }
 ```
-![](foto/foto1.png)
+![](output/foto1.png)
 ### Penjelasan
 Program ini dimulai dengan mendefinisikan sebuah array berisi angka yang akan diproses. Fungsi sorting kemudian dipanggil untuk memisahkan angka ganjil dan genap dalam array tersebut. Angka ganjil disimpan dalam array ganjil dan angka genap dalam array genap. Selanjutnya, setiap array akan diurutkan secara terpisah: array ganjil diurutkan secara menaik, sementara array genap diurutkan secara menurun. Setelah kedua array terurut, keduanya digabungkan menjadi satu array, dengan angka ganjil terlebih dahulu diikuti oleh angka genap. Hasil akhirnya adalah array yang telah terurut sesuai dengan aturan yang telah ditentukan, dan program menampilkan hasil array yang sudah diurutkan tersebut.
 
@@ -116,7 +116,7 @@ func main() {
 	}
 }
 ```
-![](foto/foto2.png)
+![](output/foto2.png)
 ### Penjelasan
 Program ini dimulai dengan mendefinisikan struct identitas yang menyimpan nama dan nilai siswa. Fungsi nilaiujian menggunakan algoritma insertion sort untuk mengurutkan array siswa berdasarkan nilai ujian secara menurun. Di dalam main, data siswa dimasukkan ke dalam array, kemudian fungsi nilaiujian dipanggil untuk mengurutkan data. Setelah itu, program mencetak hasil nama siswa dan nilai mereka yang sudah terurut.
 
@@ -180,7 +180,7 @@ func main() {
 	tampilkanOutput(daerah)
 }
 ```
-![](foto/foto3.png)
+![](output/foto3.png)
 ### Penjelasan
 Program ini bertujuan untuk mengurutkan nomor rumah kerabat Hercules di setiap daerah menggunakan algoritma selection sort secara menaik. Input dimulai dengan jumlah daerah (n), lalu setiap daerah diikuti oleh jumlah rumah (m) dan daftar nomor rumah. Fungsi bacaInput membaca semua input, menyimpan data setiap daerah dalam slice dua dimensi, dan langsung mengurutkannya menggunakan selectionSort. Fungsi selectionSort sendiri mencari elemen terkecil dari bagian yang belum terurut dan menukarnya ke posisi yang tepat. Setelah semua data diurutkan, fungsi tampilkanOutput mencetak nomor rumah yang sudah terurut untuk masing-masing daerah.
 
@@ -270,7 +270,7 @@ func main() {
 	tampilkanOutput(data)
 }
 ```
-![](foto/foto4.png)
+![](output/foto4.png)
 ### Penjelasan
 Program ini merupakan lanjutan dari program sebelumnya yang dimodifikasi agar Hercules hanya perlu menyeberang jalan sesedikit mungkin. Setiap nomor rumah yang dimasukkan akan dipisah menjadi dua yaitu ganjil dan genap. Nomor ganjil diurutkan naik (menaik), sedangkan nomor genap diurutkan turun (menurun) menggunakan algoritma selection sort. Setelah diurutkan, keduanya digabung dan ditampilkan per daerah: ganjil dulu, lalu genap. Tujuannya agar urutan kunjungan mengikuti sisi jalan yang sama lebih dulu sebelum menyeberang.
 
@@ -341,7 +341,7 @@ func main() {
 	}
 }
 ```
-![](foto/foto5.png)
+![](output/foto5.png)
 ### Penjelasan
 Program ini dibuat untuk menyelesaikan sebuah problem kompetisi pemrograman yang menantang peserta untuk menghitung median dari sekumpulan bilangan bulat positif yang terus bertambah. Setiap angka yang dibaca dari input akan disimpan, kecuali angka 0 dan bilangan negatif. Ketika angka 0 dibaca, program akan menghitung median dari seluruh data yang telah tersimpan hingga saat itu. Median dihitung setelah data diurutkan menggunakan metode selection sort. Jika jumlah data ganjil, maka median adalah nilai di tengah. Jika jumlah data genap, maka median adalah rata-rata dari dua nilai tengah, namun dibulatkan ke bawah (mengikuti aturan kompetisi). Bilangan negatif menandakan akhir dari proses input. Dengan pendekatan ini, program dapat menghitung median berkali-kali berdasarkan urutan data yang terus bertambah secara dinamis.
 
@@ -411,7 +411,7 @@ func main() {
 	}
 }
 ```
-![](foto/foto6.png)
+![](output/foto6.png)
 ### Penjelasan
 Program ini menggunakan algoritma insertion sort untuk mengurutkan deretan bilangan bulat yang dimasukkan oleh pengguna hingga ditemukan angka negatif sebagai penanda akhir input. Setelah data diurutkan, program akan mencetak deretan angka tersebut dan memeriksa apakah setiap pasangan bilangan memiliki selisih (jarak) yang tetap. Jika semua selisih antar elemen sama, maka program menyatakan bahwa data berjarak tetap beserta nilai jaraknya, jika tidak, program akan mencetak bahwa data tidak berjarak tetap.
 
@@ -564,6 +564,6 @@ func main() {
 	cariBuku(pustaka, nPustaka, ratingCari)
 }
 ```
-![](foto/foto7.png)
+![](output/foto7.png)
 ### Penjelasan
 Program ini digunakan untuk mengelola daftar buku dengan informasi seperti ID, judul, penulis, penerbit, eksemplar, tahun terbit, dan rating. Fungsi daftarkanBuku digunakan untuk memasukkan data buku ke dalam array DaftarBuku, sementara urutBuku mengurutkan buku berdasarkan rating tertinggi menggunakan algoritma insertion short. Fungsi cetakTerfavorit menampilkan buku dengan rating tertinggi, dan cetak5Terbaru mencetak lima buku dengan rating tertinggi. Fungsi cariBuku mencari buku dengan rating tertentu dan menampilkan semua buku dengan rating yang sama.
