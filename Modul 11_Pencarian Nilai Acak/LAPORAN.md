@@ -58,7 +58,7 @@ func main() {
 	}
 }
 ```
-![](foto/foto1.png)
+![](output/foto1.png)
 ### Penjelasan
 Program ini diawali dengan meminta pengguna memasukkan jumlah barang yang akan diinputkan. Setelah jumlah ditentukan, program akan mengumpulkan nama-nama barang sesuai jumlah yang dimasukkan melalui fungsi dataBarang, yang menyimpan data dalam bentuk array bertipe string. Selanjutnya, pengguna diminta untuk memasukkan nama barang yang ingin dicari. Proses pencarian dilakukan dengan fungsi cariArray, yang akan memeriksa satu per satu elemen dalam array untuk mencocokkan dengan input barang yang dicari. Jika barang ditemukan, program akan menampilkan pesan bahwa barang ditemukan; jika tidak, akan ditampilkan bahwa barang tidak ditemukan.
 
@@ -98,7 +98,7 @@ func main() {
 	}
 }
 ```
-![](foto/foto2.png)
+![](output/foto2.png)
 ### Penjelasan
 Program ini dimulai dengan meminta pengguna memasukkan sebuah kalimat dan satu karakter yang ingin dicari. Setelah input diterima, program menjalankan fungsi pencarianHuruf yang akan memeriksa setiap karakter dalam kalimat dan mencatat posisi indeks dari karakter yang sesuai dengan input pengguna. Hasil dari pencarian tersebut dikembalikan dalam bentuk slice berisi indeks-indeks kemunculan karakter. Jika karakter ditemukan dalam kalimat, program akan menampilkan semua posisi kemunculannya; jika tidak ditemukan, akan ditampilkan pesan bahwa karakter tidak ada dalam kalimat.
 
@@ -155,7 +155,7 @@ func main() {
 	}
 }
 ```
-![](foto/foto3.png)
+![](output/foto3.png)
 ### Penjelasan
 Program ini menyimpan data beberapa mahasiswa dalam bentuk slice struct yang terdiri dari nama dan NIM. Pengguna dapat mencari data mahasiswa berdasarkan NIM yang dimasukkan melalui proses pencarian menggunakan algoritma binary search. Fungsi binarySearch membandingkan nilai NIM yang dicari dengan NIM yang ada di posisi tengah array dan terus mempersempit pencarian ke kiri atau kanan sampai ditemukan atau data habis. Karena menggunakan binary search, data mahasiswa harus dalam keadaan terurut berdasarkan NIM. Jika NIM ditemukan, program akan menampilkan indeks posisi dalam array; jika tidak, akan muncul pesan bahwa data mahasiswa tidak ditemukan.
 
@@ -220,7 +220,7 @@ func main() {
 	tampilkanHasil(totalMasuk, totalSah, perolehan)
 }
 ```
-![](foto/foto4.png)
+![](output/foto4.png)
 ### Penjelasan
 Program ini digunakan untuk merekap hasil pemilihan ketua RT dengan maksimal 20 calon. Program dimulai dengan meminta pengguna memasukkan suara dalam bentuk angka, yang berakhir ketika pengguna memasukkan angka 0. Suara-suara yang masuk disimpan dalam slice, lalu dihitung jumlah suara sah menggunakan fungsi hitungSuara, yang hanya menghitung angka antara 1 hingga 20 sebagai suara valid dan mencatat perolehan masing-masing calon dalam array perolehan. Setelah itu, program menampilkan total suara yang masuk, jumlah suara sah, dan jumlah suara yang diperoleh oleh masing-masing calon yang mendapatkan suara, melalui fungsi tampilkanHasil.
 
@@ -312,7 +312,7 @@ func main() {
 	}
 }
 ```
-![](foto/foto4.png)
+![](output/foto4.png)
 ### Penjelasan
 Program ini lanjutan dari program soal nomor 1 dan bertujuan untuk merekap dan menentukan hasil pemilihan ketua serta wakil ketua RT dari maksimal 20 calon. Program dimulai dengan meminta pengguna memasukkan suara secara berurutan hingga memasukkan angka 0 sebagai penanda akhir input. Suara-suara yang masuk dihitung jumlah totalnya dan diproses menggunakan fungsi hitungSuara untuk memisahkan suara sah, yaitu angka dari 1 sampai 20, serta mencatat perolehan suara masing-masing calon. Fungsi tampilkanHasil akan menampilkan jumlah suara yang masuk dan yang sah. Selanjutnya, program menjalankan fungsi cariKetuaWakil untuk menentukan ketua dan wakil ketua RT berdasarkan jumlah suara terbanyak pertama dan kedua, dengan prioritas pada calon bernomor lebih kecil jika terjadi jumlah suara yang sama. Hasil akhir berupa nomor calon ketua dan wakil ketua ditampilkan jika ada suara sah yang masuk.
 
@@ -367,6 +367,6 @@ func main() {
 	}
 }
 ```
-![](foto/foto5.png)
+![](output/foto5.png)
 ### Penjelasan
 Program ini bertujuan untuk mencari apakah sebuah angka tertentu terdapat dalam kumpulan angka yang telah dimasukkan oleh pengguna. Pertama, pengguna diminta untuk memasukkan sejumlah data angka, lalu diikuti dengan angka yang ingin dicari. Program kemudian menyimpan seluruh angka tersebut dan mulai melakukan pencarian menggunakan metode binary search, yaitu teknik pencarian cepat dengan membandingkan angka tengah dari kumpulan data yang sudah terurut. Jika angka yang dicari ditemukan dalam kumpulan, program akan menampilkan posisi atau urutan kemunculannya. Namun, jika tidak ditemukan, program akan menampilkan pesan bahwa angka tersebut tidak ada dalam data yang dimasukkan.
