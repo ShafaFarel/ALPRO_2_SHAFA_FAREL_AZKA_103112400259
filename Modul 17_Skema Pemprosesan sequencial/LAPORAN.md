@@ -81,7 +81,7 @@ func main() {
 	}
 }
 ```
-![](output/foto1.png)
+![](output/UNGUIDED/foto1.png)
 ### Penjelasan
 Program ini menerima sejumlah bilangan real dari pengguna yang diakhiri dengan marker 9999. Jika angka pertama yang dimasukkan adalah 9999, program akan menampilkan pesan "Tidak ada angka yang dimasukkan". Jika tidak, program akan menjumlahkan semua bilangan yang dimasukkan dan menghitung jumlah angka yang valid. Setelah proses input selesai (ketika 9999 dimasukkan), program menghitung rata-rata dengan membagi total jumlah bilangan dengan jumlah angka yang dimasukkan, lalu menampilkan hasilnya dengan format dua angka desimal.
 
@@ -143,7 +143,7 @@ func main() {
 	cariString(target, banyak)
 }
 ```
-![](output/foto2.png)
+![](output/UNGUIDED/foto2.png)
 ### Penjelasan
 Program ini meminta pengguna untuk memasukkan kata yang ingin dicari dan jumlah kata yang akan dimasukkan. Kemudian, program mencari posisi kemunculan kata tersebut di dalam daftar input pengguna. Jika kata ditemukan, program akan menampilkan posisi-posisi kata tersebut serta jumlah kemunculannya. Jika kata ditemukan lebih dari satu kali, program akan menginformasikan bahwa kata tersebut muncul lebih dari sekali; jika hanya satu kali, program menyebutkan bahwa kata hanya ditemukan sekali. Jika kata tidak ditemukan sama sekali, program akan menampilkan pesan bahwa kata tidak ditemukan.
 
@@ -222,7 +222,7 @@ func main() {
 	tampilkanHasil(curahHujanA, curahHujanB, curahHujanC, curahHujanD)
 }
 ```
-![](output/foto3.png)
+![](output/UNGUIDED/foto3.png)
 ### Penjelasan
 Program ini meminta pengguna untuk memasukkan jumlah tetesan air hujan. Setiap tetesan akan ditempatkan secara acak dalam koordinat (x, y) antara 0 hingga 1. Berdasarkan posisi x dan y, tetesan tersebut akan dikategorikan ke dalam salah satu dari empat daerah (A, B, C, D). Setiap daerah mewakili seperempat bidang 1x1. Setelah semua tetesan dihitung, program mengalikan jumlah tetesan di masing-masing daerah dengan ukuran tetesan untuk menghitung dan menampilkan curah hujan (dalam milimeter) di masing-masing daerah.
 
@@ -284,7 +284,7 @@ func main() {
 	fmt.Printf("Pada i ke: %d\n", iter)
 }
 ```
-![](output/foto4.png)
+![](output/UNGUIDED/foto4.png)
 ### Penjelasan
 Program ini menghitung nilai pendekatan konstanta π (pi) menggunakan deret Leibniz hingga jumlah suku yang ditentukan pengguna. Setiap iterasi menambahkan atau mengurangi suku ke total, lalu mengalikan hasilnya dengan 4. Program membandingkan dua hasil pendekatan terakhir dan berhenti lebih awal jika selisihnya kurang dari 0.00001. Nilai π kemudian dibulatkan hingga 10 angka di belakang koma dan ditampilkan bersama dengan iterasi keberapa pendekatan tersebut stabil.
 
@@ -360,6 +360,6 @@ func main() {
 	fmt.Printf("PI : %.10f\n", pi)
 }
 ```
-![](output/foto5.png)
+![](output/UNGUIDED/foto5.png)
 ### Penjelasan
 Program ini memperkirakan nilai π (pi) dengan mensimulasikan peletakan topping pada pizza berbentuk lingkaran. Pengguna diminta untuk memasukkan jumlah topping, kemudian program akan memeriksa apakah topping tersebut jatuh di dalam pizza. Berdasarkan jumlah topping yang jatuh di dalam pizza, program menghitung nilai perkiraan π dan menampilkannya dengan presisi hingga 10 angka di belakang koma.
